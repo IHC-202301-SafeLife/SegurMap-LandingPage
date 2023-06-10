@@ -544,23 +544,22 @@ video {
   --tw-bg-opacity: 1;
   color: rgb(208 103 19 / var(--tw-bg-opacity));
   text-align: center;
-  margin: 40px;
+  margin: 20px;
   font-family: "Lato",Bold, sans-serif;
   font-size: 24px;
 }
 
 .box{
-  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 2rem;
 }
 
 .imgPS{
-  padding-right: 2rem;
+  margin: 20px;
   display: flex;
   align-items: center;
-  justify-content: right;
+  justify-content: center;
 }
 
 .box div img{
@@ -568,8 +567,27 @@ video {
 }
 
 .imgAS{
-  padding-left: 2.2rem;
+  
+  margin: 20px;
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
 }
+
+.hover-container {
+  position: absolute;
+}
+
+.hover-img {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hover-container:hover .hover-img {
+  opacity: 1;
+}
+
+
