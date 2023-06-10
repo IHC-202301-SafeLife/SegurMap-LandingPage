@@ -522,6 +522,38 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
+.bg-fondo-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(12 5 12 / var(--tw-bg-opacity));
+}
+
+.fg-letters-200 {
+  --tw-bg-opacity: 1;
+  color: rgb(208 103 19 / var(--tw-bg-opacity));
+  text-align: center;
+  margin: 20px;
+  font-family: "Lato",Bold, sans-serif;
+  font-size: 48px;
+}
+
+.fg-letters-100 {
+  --tw-bg-opacity: 1;
+  color: rgb(208 103 19 / var(--tw-bg-opacity));
+  text-align: center;
+  margin: 20px;
+  font-family: "Lato",Bold, sans-serif;
+  font-size: 24px;
+}
+
+.box{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 2rem;
+}
 .absolute {
   position: absolute;
 }
@@ -735,10 +767,42 @@ video {
 
 .text-\[48px\] {
   font-size: 48px;
+
 }
 
-.font-bold {
-  font-weight: 700;
+.imgPS{
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box div img{
+  cursor: pointer;
+}
+
+.imgAS{
+  
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hover-container {
+  position: absolute;
+}
+
+.hover-img {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hover-container:hover .hover-img {
+  opacity: 1;
 }
 
 .font-extrabold {
@@ -768,3 +832,4 @@ video {
     font-size: 35px;
   }
 }
+
