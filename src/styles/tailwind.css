@@ -522,13 +522,38 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.font-bold {
-  font-weight: 700;
+.imgPS {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.bg-fondo-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(12 5 12 / var(--tw-bg-opacity));
+.box div img {
+  cursor: pointer;
+}
+
+.imgAS {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hover-container {
+  position: absolute;
+}
+
+.hover-img {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hover-container:hover .hover-img {
+  opacity: 1;
 }
 
 .fg-letters-200 {
@@ -536,7 +561,7 @@ video {
   color: rgb(208 103 19 / var(--tw-bg-opacity));
   text-align: center;
   margin: 20px;
-  font-family: "Lato",Bold, sans-serif;
+  font-family: "Lato", Bold, sans-serif;
   font-size: 48px;
 }
 
@@ -545,15 +570,15 @@ video {
   color: rgb(208 103 19 / var(--tw-bg-opacity));
   text-align: center;
   margin: 20px;
-  font-family: "Lato",Bold, sans-serif;
+  font-family: "Lato", Bold, sans-serif;
   font-size: 24px;
 }
 
-.box{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  grid-gap: 2rem;
+.bg-fondo-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(12 5 12 / var(--tw-bg-opacity));
 }
+
 .absolute {
   position: absolute;
 }
@@ -562,8 +587,8 @@ video {
   position: relative;
 }
 
-.left-\[1000px\] {
-  left: 1000px;
+.left-0 {
+  left: 0px;
 }
 
 .left-\[250px\] {
@@ -574,12 +599,12 @@ video {
   left: 300px;
 }
 
-.left-\[879px\] {
-  left: 879px;
+.left-\[800px\] {
+  left: 800px;
 }
 
-.left-\[900px\] {
-  left: 900px;
+.top-0 {
+  top: 0px;
 }
 
 .top-\[100px\] {
@@ -616,50 +641,6 @@ video {
 
 .top-\[710px\] {
   top: 710px;
-}
-
-.top-\[0px\] {
-  top: 0px;
-}
-
-.left-\[500px\] {
-  left: 500px;
-}
-
-.top-\[50px\] {
-  top: 50px;
-}
-
-.top-\[90px\] {
-  top: 90px;
-}
-
-.top-\[80px\] {
-  top: 80px;
-}
-
-.top-\[60px\] {
-  top: 60px;
-}
-
-.top-\[70px\] {
-  top: 70px;
-}
-
-.top-\[150px\] {
-  top: 150px;
-}
-
-.top-\[210px\] {
-  top: 210px;
-}
-
-.m-\[0\] {
-  margin: 0;
-}
-
-.m-\[0\2c auto\] {
-  margin: 0,auto;
 }
 
 .mx-auto {
@@ -703,12 +684,8 @@ video {
   justify-content: center;
 }
 
-.gap-6 {
-  gap: 1.5rem;
-}
-
-.gap-\[2rem\] {
-  gap: 2rem;
+.gap-4 {
+  gap: 1rem;
 }
 
 .bg-\[\#0C050C\] {
@@ -725,32 +702,12 @@ video {
   padding: 1rem;
 }
 
-.p-\[3\] {
-  padding: 3;
-}
-
-.p-\[3rem\] {
-  padding: 3rem;
-}
-
-.p-\[3rem-0\] {
-  padding: 3rem-0;
-}
-
-.p-\[2rem\] {
-  padding: 2rem;
-}
-
 .pb-6 {
   padding-bottom: 1.5rem;
 }
 
 .text-center {
   text-align: center;
-}
-
-.align-middle {
-  vertical-align: middle;
 }
 
 .font-\[lato\] {
@@ -767,50 +724,14 @@ video {
 
 .text-\[48px\] {
   font-size: 48px;
-
 }
 
-.imgPS{
-  margin: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.box div img{
-  cursor: pointer;
-}
-
-.imgAS{
-  
-  margin: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hover-container {
-  position: absolute;
-}
-
-.hover-img {
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.hover-container:hover .hover-img {
-  opacity: 1;
+.font-bold {
+  font-weight: 700;
 }
 
 .font-extrabold {
   font-weight: 800;
-}
-
-.font-semibold {
-  font-weight: 600;
 }
 
 .leading-tight {
@@ -827,9 +748,36 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
 @media (max-width: 697px) {
   .max-\[697px\]\:text-\[35px\] {
     font-size: 35px;
   }
 }
 
+@media (min-width: 640px) {
+  .sm\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
