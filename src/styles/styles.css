@@ -9,7 +9,8 @@
 }
 
 @layer components {
-  hero-header {
+
+  .hero-header {
     background-color: #0c050c; /* Cambia el color de fondo aquí */
     display: flex;
     align-items: center;
@@ -30,18 +31,6 @@
     padding-right: 20px;
   }
 
-  hero-footer {
-    height: 100px;
-    background-color: #1a1a1a; /* Cambia el color de fondo del footer aquí */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .footer-text {
-    color: #d06713; /* Cambia el color del texto del footer aquí */
-    font-family: "Lato", sans-serif; /* Cambia la tipografía del texto aquí */
-  }
   
   .imgPS {
     margin: 20px;
