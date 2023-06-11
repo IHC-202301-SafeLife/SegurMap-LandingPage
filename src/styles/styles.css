@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    font-family: "Lato", system-ui, sans-serif;
+  }
+}
+
 @layer components {
   .imgPS {
     margin: 20px;
@@ -59,4 +65,7 @@
     --tw-bg-opacity: 1;
     background-color: rgb(12 5 12 / var(--tw-bg-opacity));
   }
+
+
+  
 }
