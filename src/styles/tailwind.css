@@ -526,38 +526,44 @@ html {
   --tw-backdrop-sepia:  ;
 }
 
-.container {
-  width: 100%;
+hero-header {
+  background-color: #0c050c;
+  /* Cambia el color de fondo aquí */
+  display: flex;
+  align-items: center;
 }
 
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
+.left-section {
+  flex: 1;
+  color: #fff;
+  /* Cambia el color del texto aquí */
+  padding-left: 50px;
+  font-family: "Lato", sans-serif;
+  /* Cambia la tipografía del texto aquí */
 }
 
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
+.right-section {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
 }
 
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
+hero-footer {
+  height: 100px;
+  background-color: #1a1a1a;
+  /* Cambia el color de fondo del footer aquí */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
+.footer-text {
+  color: #d06713;
+  /* Cambia el color del texto del footer aquí */
+  font-family: "Lato", sans-serif;
+  /* Cambia la tipografía del texto aquí */
 }
 
 .imgPS {
@@ -629,6 +635,10 @@ html {
   left: 0px;
 }
 
+.left-6 {
+  left: 1.5rem;
+}
+
 .left-\[250px\] {
   left: 250px;
 }
@@ -643,6 +653,10 @@ html {
 
 .top-0 {
   top: 0px;
+}
+
+.top-6 {
+  top: 1.5rem;
 }
 
 .top-\[100px\] {
@@ -681,14 +695,6 @@ html {
   top: 710px;
 }
 
-.left-6 {
-  left: 1.5rem;
-}
-
-.top-6 {
-  top: 1.5rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -697,14 +703,6 @@ html {
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
-.inline {
-  display: inline;
 }
 
 .flex {
@@ -723,32 +721,12 @@ html {
   height: 961px;
 }
 
-.h-auto {
-  height: auto;
-}
-
-.h-12 {
-  height: 3rem;
-}
-
-.h-6 {
-  height: 1.5rem;
-}
-
 .w-\[1100px\] {
   width: 1100px;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-auto {
-  width: auto;
-}
-
-.w-6 {
-  width: 1.5rem;
 }
 
 .grid-cols-1 {
@@ -771,18 +749,6 @@ html {
   gap: 1rem;
 }
 
-.gap-5 {
-  gap: 1.25rem;
-}
-
-.gap-8 {
-  gap: 2rem;
-}
-
-.gap-2 {
-  gap: 0.5rem;
-}
-
 .gap-6 {
   gap: 1.5rem;
 }
@@ -801,36 +767,16 @@ html {
   background-color: rgb(26 26 26 / var(--tw-bg-opacity));
 }
 
-.bg-emerald-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(52 211 153 / var(--tw-bg-opacity));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+.p-2 {
+  padding: 0.5rem;
 }
 
 .p-4 {
   padding: 1rem;
 }
 
-.p-2 {
-  padding: 0.5rem;
-}
-
 .p-6 {
   padding: 1.5rem;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .px-12 {
@@ -865,18 +811,6 @@ html {
   font-family: lato;
 }
 
-.text-\[24px\] {
-  font-size: 24px;
-}
-
-.text-\[28px\] {
-  font-size: 28px;
-}
-
-.text-\[48px\] {
-  font-size: 48px;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -892,6 +826,18 @@ html {
   line-height: 1;
 }
 
+.text-\[24px\] {
+  font-size: 24px;
+}
+
+.text-\[28px\] {
+  font-size: 28px;
+}
+
+.text-\[48px\] {
+  font-size: 48px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -900,16 +846,8 @@ html {
   font-weight: 800;
 }
 
-.font-normal {
-  font-weight: 400;
-}
-
 .font-semibold {
   font-weight: 600;
-}
-
-.italic {
-  font-style: italic;
 }
 
 .leading-tight {
@@ -930,6 +868,11 @@ html {
   opacity: 0;
 }
 
+.shadow-orange-500 {
+  --tw-shadow-color: #f97316;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
 @media (max-width: 697px) {
   .max-\[697px\]\:text-\[35px\] {
     font-size: 35px;
@@ -943,36 +886,16 @@ html {
 }
 
 @media (min-width: 768px) {
-  .md\:w-2\/3 {
-    width: 66.666667%;
-  }
-
   .md\:w-3\/4 {
     width: 75%;
-  }
-
-  .md\:w-96 {
-    width: 24rem;
   }
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .md\:justify-items-center {
-    justify-items: center;
-  }
-
   .md\:p-0 {
     padding: 0px;
-  }
-
-  .md\:p-14 {
-    padding: 3.5rem;
   }
 
   .md\:px-6 {
