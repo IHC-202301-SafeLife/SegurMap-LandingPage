@@ -9,6 +9,29 @@
 }
 
 @layer components {
+
+  .hero-header {
+    background-color: #0c050c; /* Cambia el color de fondo aquí */
+    display: flex;
+    align-items: center;
+  }
+
+  .left-section {
+    flex: 1;
+    color: #fff; /* Cambia el color del texto aquí */
+    padding-left: 50px;
+    font-family: "Lato", sans-serif; /* Cambia la tipografía del texto aquí */
+  }
+
+  .right-section {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+  }
+
+  
   .imgPS {
     margin: 20px;
     display: flex;
@@ -16,6 +39,7 @@
     justify-content: center;
   }
 
+  
   .box div img {
     cursor: pointer;
   }

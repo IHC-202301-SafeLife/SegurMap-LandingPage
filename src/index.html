@@ -18,119 +18,95 @@
   </head>
   <body>
     <main>
-      <section id="features">
-        <div>
-          <div class="rectangle relative bg-[#1A1A1A] w-full p-4">
-            <h1
-              class="text-[#D06713] font-[lato] font-bold text-[48px] max-[697px]:text-[35px] text-center"
-            >
-              Seguridad al alcance de tu mano
-            </h1>
-          </div>
-
-          <div>
-            <div
-              class="banner bg-[#0C050C] h-[961px] flex flex-col items-center pb-6"
-            >
-              <div>
-                <img
-                  class="absolute left-[300px] top-[220px] h-[700px] flex flex-col pb-6"
-                  src="assets/zyro-image (17) 1.png"
-                  alt="img"
-                />
-              </div>
-
-              <div class="featureList">
-                <div>
-                  <img
-                    class="absolute left-[800px] top-[220px] flex flex-col pb-6"
-                    src="assets/people.png"
-                    alt="people"
-                  />
-
-                  <div class="txt1">
-                    <h1
-                      class="relative text-white text-[28px] font-[lato] font-extrabold left-[250px] top-[100px]"
-                    >
-                      Información confiable
-                    </h1>
-                    <p
-                      class="relative text-white text-[24px] font-[lato] font-bold left-[250px] top-[110px] leading-tight"
-                    >
-                      Obtén información precisa y<br />verificada sobre los
-                      incidentes de<br />seguridad en tiempo real, para que<br />puedas
-                      tomar decisiones informadas<br />y sentirte seguro en
-                      cualquier lugar.
-                    </p>
-                  </div>
-                </div>
-
-                <div>
-                  <img
-                    class="absolute left-[800px] top-[455px]"
-                    src="assets/fast.png"
-                    alt="fast"
-                  />
-                  <div class="txt2">
-                    <h1
-                      class="relative text-white text-[28px] font-[lato] font-extrabold left-[250px] top-[160px]"
-                    >
-                      Rápida y precisa
-                    </h1>
-                    <p
-                      class="relative text-white text-[24px] font-[lato] font-bold left-[250px] top-[179px] leading-tight"
-                    >
-                      Recibe alertas inmediatas<br />sobre incidentes en tu
-                      área, para<br />que puedas tomar medidas de<br />seguridad
-                      rápidamente y protegerte<br />a ti mismo y a tus seres
-                      queridos.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="img3">
-                  <img
-                    class="absolute left-[800px] top-[710px]"
-                    src="assets/camera.png"
-                    alt="camera"
-                  />
-                  <div class="txt3">
-                    <h1
-                      class="relative text-white text-[28px] font-[lato] font-extrabold left-[250px] top-[220px]"
-                    >
-                      Rápida y precisa
-                    </h1>
-                    <p
-                      class="relative text-white text-[24px] font-[lato] font-bold left-[250px] top-[230px] leading-tight"
-                    >
-                      Revisa los incidentes recientes en tu<br />área para
-                      entender mejor la situación<br />de seguridad y tomar
-                      decisiones<br />informadas sobre tus desplazamientos<br />y
-                      actividades diarias.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="line">
-                <hr
-                  class="relative mx-auto top-[350px] w-[1100px]"
-                  color="black"
-                />
-              </div>
-            </div>
-          </div>
+      <section class="flex flex-col md:flex-row items-center bg-[#0C050C]">
+        <div class="md:w-1/2 px-4 py-8 md:py-12">
+          <h1 class="text-4xl md:text-5xl font-bold text-center md:text-left mb-4 text-white">
+            Tu compañero <br />
+            seguro en cada <br />
+            viaje.
+          </h1>
+          <p class="text-lg md:text-xl text-center md:text-left text-white">
+            La aplicación de navegación que te alerta <br />
+            sobre zonas de alto riesgo, te proporciona<br />
+            rutas seguras o alternativas en tiempo real y <br />
+            te mantiene seguro donde sea que estés.<br />
+          </p>
+        </div>
+      
+        <div class="md:w-1/2">
+          <img class="w-full max-h-96 object-contain mx-auto" src="./assets/hero.JPG" alt="Imagen del Hero" />
         </div>
       </section>
+      
+      <div class="bg-[#1A1A1A] text-[#D06713] py-6 px-4 md:py-12 md:px-6">
+        <h2 class="text-2xl md:text-4xl font-bold text-center">
+          Seguridad al alcance de tu mano
+        </h2>
+      </div>
+      
+      <section id="features" class="py-12 bg-[#0C050C]">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-8 md:mb-0">
+            <img
+              src="./assets/zyro-image (17) 1.png"
+              alt="feature-img"
+              class="w-full md:w-1/2 h-auto object-contain mx-auto"
+            />
+          </div>
+         
+          <div class="md:w-1/2 grid gap-8">
+            <div class="flex items-start md:items-center">
+              <img
+                src="./assets/people.png"
+                alt="people-img"
+                class="w-12 h-12"
+              />
+              <div class="ml-4">
+                <h3 class="text-white text-xl md:text-2xl font-bold">Información confiable</h3>
+                <p class="text-white text-lg md:text-xl">
+                  Obtén información precisa y 
+                  verificada sobre los incidentes de 
+                  seguridad en tiempo real, para que
+                puedas tomar decisiones informadas
+                 y sentirte seguro en cualquier lugar.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start md:items-center">
+              <img src="./assets/fast.png" alt="fast-img" class="w-12 h-12" />
+              <div class="ml-4">
+                <h3 class="text-white text-xl md:text-2xl font-bold">Rápida y precisa</h3>
+                <p class="text-white text-lg md:text-xl">
+                  Recibe alertas inmediatas sobre incidentes en tu área, para que puedas tomar medidas de seguridad rápidamente y protegerte a ti mismo y a tus seres queridos.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start md:items-center">
+              <img
+                src="./assets/camera.png"
+                alt="camera-img"
+                class="w-12 h-12"
+              />
+              <div class="ml-4">
+                <h3 class="text-white text-xl md:text-2xl font-bold">Revisa los incidentes</h3>
+                <p class="text-white text-lg md:text-xl">
+                  Revisa los incidentes recientes en tu área para entender mejor la situación de seguridad y tomar decisiones informadas sobre tus desplazamientos y actividades diarias.
+                </p>
+              </div>
+            </div>
+        </div>
 
+      </section>
+      
       <section
         id="customer-section"
-        class="flex flex-col justify-center bg-tertiary py-12 items-center banner bg-[#0C050C]"
+        class="flex flex-col justify-center bg-tertiary py-12 items-center banner bg-[#1A1A1A]"
       >
         <h2 class="section-title text-superbold text-2xl text-[#D06713]">
           Testimonios
         </h2>
         <p class="text-4xl text-center my-4 text-white">
-          Lo que nuestros usuarios piensan de Nosotros
+          Lo que nuestros usuarios piensan de nosotros
         </p>
         <div
           class="grid grid-cols-1 md:grid-cols-2 p-2 md:p-0 md:w-3/4 xl:w-2/3 gap-6 bg-"
@@ -179,13 +155,15 @@
                 quiera sentirse más segura al salir de casa.
               </p>
               <p class="text-2xl text-secondary font-semibold my-4">
-                JuanG., Miraflores
+                Juan G., Miraflores
               </p>
             </div>
           </div>
         </div>
       </section>
-      <section class="bg-fondo-400" id="download">  
+
+
+      <section class="bg-fondo-400" id="download">
         <div class="flex justify-center items-center">
           <h1 class="font-bold fg-letters-200">Mantente seguro</h1>
         </div>
