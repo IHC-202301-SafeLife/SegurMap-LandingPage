@@ -11,16 +11,17 @@
     <a href="https://github.com/IHC-202301-SafeLife/SegurMap-LandingPage"><strong>Documentation »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/IHC-202301-SafeLife/SegurMap-LandingPage">Demo</a>
+    <a href="http://segurmap.netlify.app/">Demo</a>
   </p>
 </div>
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<a href="http://segurmap.netlify.app/">
-  <a href="https://segurmap.netlify.app"><img src="https://i.ibb.co/n34Zggy/landing-page-screen-shot.png" alt="landing-page-screen-shot" border="0">
-</a>
+<p align="center">
+<a href="https://segurmap.netlify.app"><img src="https://i.ibb.co/n34Zggy/landing-page-screen-shot.png" alt="landing-page-screen-shot" >
+ </p>
+
 
 ### Built With
 
@@ -64,13 +65,6 @@ Don't forget to give the project a star! Thanks again!
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<!-- CONTACT -->
-## Contact
-
-JobSync - [@jobsync](https://twitter.com/jobsync) - devcontact@jobsync.com
-
-Testigos de Vue: [Organization's GitHub](https://github.com/github_username/repo_name)
 
 <!-- Badges and URLs -->
 [tailwind-url]: https://tailwindcss.com/
