@@ -807,6 +807,13 @@ p {
   cursor: pointer;
 }
 
+.imgAP {
+  display: flex;
+  justify-content: center;
+  max-height: 100%;
+  height: auto;
+}
+
 .imgAS {
   margin: 20px;
   display: flex;
@@ -927,16 +934,12 @@ p {
   margin-left: auto;
 }
 
-.mr-4 {
-  margin-right: 1rem;
+.mr-2 {
+  margin-right: 0.5rem;
 }
 
 .mt-auto {
   margin-top: auto;
-}
-
-.mr-2 {
-  margin-right: 0.5rem;
 }
 
 .flex {
@@ -971,24 +974,12 @@ p {
   width: 5rem;
 }
 
-.w-3 {
-  width: 0.75rem;
+.w-5 {
+  width: 1.25rem;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-7 {
-  width: 1.75rem;
-}
-
-.w-6 {
-  width: 1.5rem;
-}
-
-.w-5 {
-  width: 1.25rem;
 }
 
 .max-w-7xl {
@@ -1159,6 +1150,14 @@ p {
   font-size: 10px;
 }
 
+.text-\[12px\] {
+  font-size: 12px;
+}
+
+.text-\[9px\] {
+  font-size: 9px;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -1167,22 +1166,6 @@ p {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-\[7px\] {
-  font-size: 7px;
-}
-
-.text-\[5px\] {
-  font-size: 5px;
-}
-
-.text-\[12px\] {
-  font-size: 12px;
-}
-
-.text-\[9px\] {
-  font-size: 9px;
 }
 
 .font-bold {
@@ -1253,20 +1236,16 @@ p {
 }
 
 @media (min-width: 640px) {
+  .sm\:w-10 {
+    width: 2.5rem;
+  }
+
   .sm\:w-40 {
     width: 10rem;
   }
 
   .sm\:w-7 {
     width: 1.75rem;
-  }
-
-  .sm\:w-10 {
-    width: 2.5rem;
-  }
-
-  .sm\:w-12 {
-    width: 3rem;
   }
 
   .sm\:grid-cols-1 {
@@ -1346,10 +1325,6 @@ p {
 @media (min-width: 1024px) {
   .lg\:w-12 {
     width: 3rem;
-  }
-
-  .lg\:w-16 {
-    width: 4rem;
   }
 
   .lg\:grid-cols-2 {
