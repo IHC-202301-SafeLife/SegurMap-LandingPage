@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>SegurMap</title>
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="stylesheet" href="../styles/tailwind.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/ico" href="../assets/logo-SegurMap.ico" />
+    <script src="../scripts/script.js" defer></script>
+  </head>
+  <body>
+    <nav class="bg-customGray fixed w-full z-10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-11 lg:px-8">
+        <div class="flex items-center justify-between h-20 space-x-4">
+          <!-- Logo -->
+          <div>
+            <a href="../en.html">
+              <img
+                src="../assets/Logo-Titulo.png"
+                alt="Logo"
+                class="w-20 sm:w-40 lg:w-30"
+              />
+            </a>
+          </div>
+
+          <!-- Menú -->
+          <div class="ml-auto">
+            <ul
+              class="flex items-center space-x-2 lg:space-x-4 text-[10px] lg:text-[16px]"
+            >
+              <li>
+                <a
+                  href="#"
+                  id="Nosotros"
+                  class="text-customOrange opacity-80 hover:opacity-100"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  id="Mision"
+                  class="text-customOrange opacity-80 hover:opacity-100"
+                  >Mission</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-customOrange opacity-80 hover:opacity-100"
+                  >Log In</a
+                >
+              </li>
+              <a
+                href="https://www.figma.com/proto/jQRro08AWGqeE1ozo1QZ7z/Figma-Basics?type=design&node-id=525-1166&t=7WGqsJn5PQvKzKOU-1&scaling=scale-down&page-id=0%3A286&starting-point-node-id=525%3A1166&mode=design"
+                target="_blank"
+              >
+                <button
+                  class="hover:bg-customOrange text-customOrange font-semibold hover:text-black py-1 px-4 border border-customOrange hover:border-transparent rounded-full"
+                >
+                  Sign Up
+                </button>
+              </a>
+
+              <li>
+                <div class="ml-auto languageButton">
+                  <button
+                    type="button"
+                    class="px-3 py-2"
+                    id="language-switcher-btn"
+                  >
+                    <img
+                      class="h-10"
+                      src="../assets/changeLanguageIcon.svg"
+                      alt="Language switcher icon"
+                    />
+                  </button>
+                  <div
+                    id="language-menu"
+                    class="absolute rounded-md bg-orange-500 shadow-lg hidden"
+                    aria-orientation="vertical"
+                    aria-labelledby="menu-button"
+                  >
+                    <div class="py-1" role="none">
+                      <a href="index.html" class="block px-4 py-2 text-sm"
+                        >English</a
+                      >
+                      <a
+                        href="../terminos-y-condiciones/index.html"
+                        class="block px-4 py-2 text-sm"
+                        >Español</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="h-20"></div>
+    <div class="container mx-auto py-10 px-4 bg-[#0C050C]">
+      <h1
+        class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-6 text-[#D06713]"
+      >
+        Terms and Conditions
+      </h1>
+
+      <div class="max-w-3xl mx-auto bg-b p-8 rounded-lg shadow text-white">
+        <p class="mb-6">
+          Welcome to our citizen security application. Before using our
+          services, we kindly request you to carefully read the following terms
+          and conditions. By accessing and using our application, you agree to
+          comply with and be bound by these terms and conditions. If you do not
+          agree with any of them, we recommend that you do not use our
+          application.
+        </p>
+
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4">
+          1. Use of the Application
+        </h2>
+
+        <p class="mb-6">
+          1.1 By using our application, you acknowledge that the provided
+          information is for informational purposes only and does not constitute
+          legal, security, or professional advice. <br />1.2 You agree to use
+          our application in compliance with all applicable laws and regulations
+          and agree not to use it for illegal or fraudulent activities.
+          <br />1.3 The information and security updates we provide are based on
+          data collected from various sources and may not always reflect the
+          real-time situation. We are not responsible for the accuracy,
+          completeness, or reliability of such information.
+        </p>
+
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4">
+          2. User Responsibility
+        </h2>
+        <p class="mb-6">
+          2.1 By creating a profile and providing your personal data, you agree
+          that the provided information is accurate, up-to-date, and
+          complete.<br />
+          2.2 You are responsible for maintaining the confidentiality of your
+          account and password, and you agree to immediately notify us of any
+          unauthorized use of your account.<br />
+          2.3 You agree to use our application at your own risk and acknowledge
+          that we are not liable for any damage or loss resulting from the use
+          of our application.
+        </p>
+
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4">
+          3. Intellectual Property
+        </h2>
+        <p class="mb-6">
+          3.1 All intellectual property rights related to our application and
+          its content (including but not limited to logos, texts, graphics,
+          images, and software) are exclusively owned by us or our licensors.
+          <br />3.2 Unauthorized reproduction, distribution, modification, or
+          any other unauthorized use of our application's content is strictly
+          prohibited without our express written consent.
+        </p>
+
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4">
+          4. Third-Party Links
+        </h2>
+        <p class="mb-6">
+          4.1 Our application may contain links to third-party websites or
+          resources. These links are provided solely for your convenience, and
+          we have no control over or assume any responsibility for the content,
+          accuracy, or privacy practices of such third-party websites.<br />
+          4.2 By accessing third-party websites through links provided in our
+          application, you do so at your own risk and should review and accept
+          the applicable terms and conditions and privacy policies of those
+          websites.
+        </p>
+
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4">
+          5. Modifications to the Terms and Conditions
+        </h2>
+        <p class="mb-6">
+          5.1 We reserve the right to modify or update these terms and
+          conditions at any time without prior notice. The modifications will
+          become effective upon their publication in our application.<br />
+          5.2 We recommend that you regularly review the terms and conditions to
+          stay informed about any changes. Your continued use of our application
+          after the publication of modifications will constitute your acceptance
+          of the modified terms and conditions.
+        </p>
+
+        <p class="mb-6">
+          If you have any questions or concerns about these terms and
+          conditions, please contact us through the support channels provided in
+          our application. These terms and conditions were last updated on
+          09/28/2023.
+        </p>
+      </div>
+    </div>
+    <footer>
+      <div class="logo items-start space-x-1 lg:space-x-8 flex">
+        <img
+          src="../assets/Logo-Titulo.png"
+          alt="lgo"
+          class="w-20 sm:w-40 lg:w-30"
+        />
+
+        <ul class="flex flex-col items-start space-y-2 lg: space-y-2">
+          <li>
+            <a
+              href="#"
+              class="text-customOrange lg:space-y-4 text-[12px] lg:text-[20px]"
+            >
+              Company</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              id="Mision2"
+              class="text-customOrange lg:space-y-4 text-[9px] lg:text-[16px] opacity-80 hover:opacity-100"
+              >Mission</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              id="Nosotros2"
+              class="text-customOrange lg:space-y-4 text-[9px] lg:text-[16px] opacity-80 hover:opacity-100"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/IHC-202301-SafeLife/SegurMap-LandingPage"
+              target="_blank"
+              class="text-customOrange lg:space-y-4 text-[9px] lg:text-[16px] opacity-80 hover:opacity-100"
+              >Join Us</a
+            >
+          </li>
+        </ul>
+        <ul class="flex flex-col items-start space-y-2 lg:space-y-2">
+          <li>
+            <a
+              href="#"
+              class="text-customOrange lg:space-y-4 text-[12px] lg:text-[20px]"
+              >Support</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-customOrange text-[9px] lg:text-[16px] opacity-80 hover:opacity-100"
+              >Help</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-customOrange text-[9px] lg:text-[16px] opacity-80 hover:opacity-100"
+              >Privacy</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html"
+              class="text-customOrange text-[9px] lg:text-[16px] opacity-80 hover:opacity-100"
+              >Terms and Conditions</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="social-icons">
+        <ul class="flex">
+          <li class="mr-2">
+            <div class="hover-container relative w-5 sm:w-7 lg:w-12">
+              <a
+                href="https://www.google.com/intl/es-419/gmail/about/"
+                target="_blank"
+              >
+                <img src="../assets/Mail.svg" alt="" />
+
+                <img
+                  class="hover-img opacity-0 absolute top-0 left-0"
+                  src="../assets/mail-variant.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </li>
+          <li class="mr-2">
+            <div class="hover-container relative w-5 sm:w-7 lg:w-12">
+              <a href="https://www.facebook.com/" target="_blank">
+                <img src="../assets/FB.svg" alt="" />
+                <img
+                  class="hover-img opacity-0 absolute top-0 left-0"
+                  src="../assets/fb-variant.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </li>
+          <li class="mr-2">
+            <div class="hover-container relative w-5 sm:w-7 lg:w-12">
+              <a href="https://twitter.com/?lang=es" target="_blank">
+                <img src="../assets/Twitt.svg" alt="" />
+                <img
+                  class="hover-img opacity-0 absolute top-0 left-0"
+                  src="../assets/twitter-variant.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="hover-container relative w-5 sm:w-10 lg:w-12">
+              <a href="https://www.instagram.com/" target="_blank">
+                <img src="../assets/IG.svg" alt="" />
+                <img
+                  class="hover-img opacity-0 absolute top-0 left-0"
+                  src="../assets/ig-variant.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        class="text-align: left position: left text-[10px] lg:text-[16px] mt-auto"
+      >
+        <a>©2023 SegurMap Inc. All Rights Reserved</a>
+      </div>
+    </footer>
+  </body>
+</html>
