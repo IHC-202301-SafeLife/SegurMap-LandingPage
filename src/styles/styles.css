@@ -91,6 +91,19 @@
   }
 
   
+  footer {
+    background-color: #1a1a1a; /* Cambia el color de fondo aquí */
+    color: #d06713; /* Cambia el color del texto aquí */
+    padding: 20px 20px 10px; /* Ajusta los valores de padding según tu preferencia */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 230px;
+    position: relative;
+    font-family: "Lato", Arial, sans-serif;
+  }
 
   .logo {
     margin-right: 20px;
@@ -107,12 +120,6 @@
     text-align: left; /* Alinea el texto a la izquierda */
   }
 
-  .footer-text {
-    text-align: left;
-    position: absolute;
-    bottom: 0;
-    left: 20px;
-  }
 
   .social-icons {
     display: flex;
@@ -457,18 +464,11 @@ p {
   text-align: left; /* Alinea el texto a la izquierda */
 }
 
-.footer-text {
-  text-align: left;
-  position: absolute;
-  bottom: 0;
-  left: 20px;
-}
 
 .social-icons {
-  display: flex;
   align-items: center;
   position: absolute;
-  bottom: 20px;
+  bottom: 50px;
   right: 20px;
 }
 
