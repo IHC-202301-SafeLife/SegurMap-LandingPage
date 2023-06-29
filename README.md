@@ -8,7 +8,7 @@
   <p align="center">
     SegurMap is an application that shows the safe path to any destination, avoinding risk in your travel.
     <br />
-    <a href="https://github.com/IHC-202301-SafeLife/SegurMap-LandingPage"><strong>Documentation »</strong></a>
+    <a href="https://docs.google.com/document/d/1Ug9fl_m_h6fdaLDkKYrIdxS1mnGQL4rc/edit?usp=sharing&ouid=101244057574658356881&rtpof=true&sd=true"><strong>Documentation »</strong></a>
     <br />
     <br />
     <a href="http://segurmap.netlify.app/">Demo</a>
